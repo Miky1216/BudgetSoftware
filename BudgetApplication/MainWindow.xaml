@@ -1,0 +1,32 @@
+﻿<Page x:Class="BudgetApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" WindowHeight="550" WindowWidth="550" Height="Auto" Width="Auto">
+
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="600"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="156"/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAccount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,38,0,0" Width="75" Click="btnAccount_Click" Height="22">
+            <Hyperlink NavigateUri="AccountsInterface.xaml">Accounts</Hyperlink>
+        </Button>
+        <Button x:Name="btnBudget" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,73,0,0" Width="75" Click="btnBudget_Click" Height="22">
+            <Hyperlink NavigateUri="BudgetInterface.xaml">Budget</Hyperlink>
+        </Button>
+        <Button x:Name="btnReports" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,115,0,0" Width="75" Click="btnReports_Click" Height="22">
+            <Hyperlink NavigateUri="ReportsInterface.xaml">Reports</Hyperlink>
+        </Button>
+
+        <TextBlock Grid.Column="1"  x:Name="txtblockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Budgeting Your Life" VerticalAlignment="Top" FontSize="24" Height="44" Margin="53,73,0,0" Width="250"/>
+        <DataGrid HorizontalAlignment="Left" Margin="8,168,0,0" VerticalAlignment="Top" Width="148" Height="265"/>
+
+
+    </Grid>
+
+</Page>
