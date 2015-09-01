@@ -1,0 +1,1946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1f12dfe6-34d8-41da-9a1f-8be80bd6ae2c"
+  name="BudgetApplication"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="49a48ef8-d2c9-4f17-a10d-d28162de8616"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBudgetApplication"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3c16cc66-8fbc-4c6d-94e9-23966f3390b3"
+        name="Accounts"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3a431845-e9a9-4261-af89-7318375cff2c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccounts"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1093858b-0555-49db-815e-7b1e6aa0ac4a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c885d7ae-3d92-4318-b465-4ab13477539f">
+                <propertyInstance
+                  Id="dbe82487-25fb-4cdf-9840-27ccc24e7e32"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d45f9aa-b2ea-46d3-b941-9b557ef72846">
+                <propertyInstance
+                  Id="63260fc6-03f9-46dc-801f-6c27750763f4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a575cac-07aa-4eb8-8c48-bf18b9e0ce1a">
+                <propertyInstance
+                  Id="f6595d9b-0add-4b6a-9f13-4b0f5e7a2a66"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb0c4605-a5af-4489-9c57-b82ed52b8377">
+                <propertyInstance
+                  Id="afdfa062-0b2c-4e8f-87f9-3e38dd935e92"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="137fd0e6-54a3-4574-aac8-57444a3ad193">
+                <propertyInstance
+                  Id="30ca844a-1648-4719-8972-ecb73e0b66df"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="49dce710-3a58-4cc6-bbde-f90ec35d2bae"
+            name="Accounts"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29f003a9-e7ef-4ff9-bfc4-d98e9cf06319"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccounts Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab14c40b-21a2-4568-9c64-702a08ea281c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d438b6a-28b4-4bc0-84fe-8e9777637c6a">
+                    <propertyInstance
+                      Id="bd886a64-365a-4cc6-b45e-fe5c48f79473"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c620d2b-af43-402f-86d4-c0cbb017e0ec">
+                    <propertyInstance
+                      Id="c0f83617-e3b6-4a60-9bbc-267ba5026937"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d670988-5308-4f1e-b21d-3960dfa2de7a">
+                    <propertyInstance
+                      Id="2a3b0c68-f400-429d-8a53-05215904cd75"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a53e775b-be34-4a63-af40-0413c582cc10">
+                    <propertyInstance
+                      Id="38d88fc2-2d51-42f9-815f-3e63a716596d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc2323be-100a-42a7-aac2-86d442e9cbac">
+                    <propertyInstance
+                      Id="66b0f772-5fd9-4aa7-9c3d-3f3f774ee01a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5f7c07b-2976-4809-9111-a7a17baa6cc9">
+                    <propertyInstance
+                      Id="5a3dda28-3432-4229-93b4-7d338a4f4993"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dfdc1832-6965-420f-8bbb-a14cf3b28536"
+        name="AccountsInterface"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="79c3f799-bb81-4309-b039-1e998e87f95c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="61cb007c-b4a4-4f97-bd9d-8cd927fd2687"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8dc22a02-b788-49fb-b6d8-7e0e2c192ab4">
+                <propertyInstance
+                  Id="ff2d7aec-0e32-476b-913e-0de0d3635321"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38535bc8-3bca-4147-b8f0-6b888d487b7c">
+                <propertyInstance
+                  Id="28f4b801-7a64-44c1-87d9-26bf45cedd90"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c1c5df1-8ff2-47b8-9791-e17bf59569e7">
+                <propertyInstance
+                  Id="e55fcb84-b146-4ab6-ad73-d2b0cf2d6ff9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc474fa3-506d-4fb3-ad81-480877aacbb4">
+                <propertyInstance
+                  Id="c538fb98-dab0-4616-a1ef-56a0415ec2c0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46fe2233-bdb5-4508-89e3-ff737981b31f">
+                <propertyInstance
+                  Id="1c991865-5220-42e7-8c3c-e8adf33b9fca"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="cf74ad7c-7bfd-48a7-a36a-54c4ebde91cd">
+            <interfaceMoniker
+              Id="5ab9f4e2-0a76-470b-8eca-7426fb0f442a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package3_1425.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="f20a3010-d504-49f4-9ad5-8d6f4b51c21b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a0668175-20ec-409c-a086-c7fbb86ada4d"
+              LastKnownName="Page"
+              LastKnownLocation="Package4_1425.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="44039f9a-eb59-4914-891e-6505419c5318"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e31651ce-de3e-42f7-b4ca-132b4ed1ea59"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d7111b72-73f6-450b-8858-f7a345cba3f2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e55d5e7-9a52-4a0d-b486-5a49e6929c97">
+                    <propertyInstance
+                      Id="396ecc33-8d15-42ff-af97-1a30125974b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebf61348-da82-4176-8553-1100b8902dd6">
+                    <propertyInstance
+                      Id="2066e322-d1fd-4b53-83f8-a1d3e725bd9a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d2a36e5-0493-4c30-8958-2638da2b4bc0">
+                    <propertyInstance
+                      Id="d698605c-cf3a-4bfd-b6ea-08ea30536083"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4727c338-8ed5-4ba4-a48a-e01c1338cb7d">
+                    <propertyInstance
+                      Id="7dbd3c7a-778b-4ed1-9748-14ced1b58ee5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ada2834-0d04-4a3d-9d37-4507399abd43">
+                    <propertyInstance
+                      Id="4c991a05-99b1-4092-b421-916ac8604986"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="UMLBudgetApplication.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e4d42714-a040-4656-bcf8-100b19ccf5a4"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a621f5ae-37d6-4d2e-92c7-9defbb3d19ef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cbc81095-6bfa-488d-a302-c186e7271567"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04c7956e-1179-4933-a6af-bfd523f5455f">
+                    <propertyInstance
+                      Id="2e00a616-5400-4cfb-b0e2-6cb30341c248"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b153071c-8278-4a8f-998f-c091f098ee5f">
+                    <propertyInstance
+                      Id="260ba176-61a9-4b8e-88c7-4dcbc86c1634"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c24ba0a3-a3ea-481c-bd75-3b3a9641434d">
+                    <propertyInstance
+                      Id="fd46c3b9-34fa-40b3-8f03-e013360c38d4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3f2f567-cb5c-4e6f-a823-8543f12e40f1">
+                    <propertyInstance
+                      Id="aafd0e49-0245-4000-9a54-f2c22ca82f4a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d5856c2-8362-4cee-b563-cbd920ccf46d">
+                    <propertyInstance
+                      Id="0501190a-25bc-43fe-90ef-9e51afabd5fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a79cb04-9bd1-484f-be61-29c3e3f8df10">
+                    <propertyInstance
+                      Id="25f6ced7-5ced-4986-9b0b-56a69ce832cc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed0efb2c-7b86-4dee-9f15-d9e461fc107f"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7361ba57-ef8f-4846-9348-65c7a5c15c08"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="UMLBudgetApplication.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="542374a3-d840-497b-8089-6be7053a913b"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2977dbf7-8c0c-41aa-a721-70706a300f7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c9042c1-f4cd-400e-b5e8-422abc9ec66a"
+            name="AccountsInterface"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="99d30cda-5950-43bb-966c-80c5b8488758"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b2c14cc-adc0-4052-b320-533602c59608"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f9eab1f-c3bf-4eb3-9500-c6122b75ee37">
+                    <propertyInstance
+                      Id="b043cde7-fb1d-4b8d-9dee-209cd58ee540"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c017cd8e-84c0-4dec-80b5-831ba5d23e56">
+                    <propertyInstance
+                      Id="a6d18b35-2182-43c3-afaa-e3558e2991a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d76cbbe9-b32d-4abb-b8c5-d38af023e799">
+                    <propertyInstance
+                      Id="50d08015-f8b7-4892-b3f4-1579e44e8e79"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34407bfc-1767-4395-95f0-4be59c9d8c18">
+                    <propertyInstance
+                      Id="adbf3f3e-5a8d-443c-9a47-f0ea381869ec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2483fe6-48d6-45d7-8e42-9ac3f2617f33">
+                    <propertyInstance
+                      Id="edb80ceb-d44e-4675-a84b-8b5e42e45cd4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b20566a1-39b9-402d-8047-ec002dad963a">
+                    <propertyInstance
+                      Id="07b81c56-f6c6-4701-993f-478c396bfc6a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="05198efe-5431-41cf-9ef7-af0efeb25e5f"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9a6d6be0-baaf-43f0-863a-1dddfc2a0321"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DAccountsInterface Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1c4bdd1b-53f2-471c-b886-db9079ccbb30"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b562380-b346-4711-a1de-45266d4468e3">
+                    <propertyInstance
+                      Id="a1a9a51b-8438-4e6d-a98b-95d4c299e31c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d4a5f52-7448-4a0f-a93f-5dab6244e714">
+                    <propertyInstance
+                      Id="46ddb01b-dabd-4137-ab21-7594f5e8c15c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc218de6-36b2-4ae9-9a87-2557c4d1c9e0">
+                    <propertyInstance
+                      Id="08ecb421-9b22-494d-9be0-059fc9734f09"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3ba4388-0179-48cd-b0d6-ac3bf01f0c5f">
+                    <propertyInstance
+                      Id="6eb21fc7-528a-4e29-b228-4c73fe7feed6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48d79f59-a55f-4fe5-80ab-f28e1afedb86">
+                    <propertyInstance
+                      Id="f54ea380-4430-4d6d-aadc-a0d438c1ab25"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28e861f6-9726-4c79-940e-e3406f520bc5">
+                    <propertyInstance
+                      Id="c9eb04ab-775b-49ca-bdab-6c278f7aee69"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8229cbd5-6234-492a-9d6c-8f4793fa710b"
+        name="BudgetInterface"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="08441901-899d-43b2-a910-b398b8d9dcbe"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f2230ffb-cba7-4e14-88fa-802273f0631b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61426062-e2e7-40d9-ad9c-798cc31e21e6">
+                <propertyInstance
+                  Id="c9df2576-65a7-4f75-82f1-4446102cd69a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a323024b-ede8-477d-b894-6d80f5aa59b5">
+                <propertyInstance
+                  Id="90a20386-6cf9-4560-8fb7-84a0e6d79b53"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b2243ce4-ec20-4dd1-aa29-ab3da802b506">
+                <propertyInstance
+                  Id="48af895f-feb9-490a-9667-2a5806e540b3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbc2e44a-b9ce-434e-a84f-9809659ef902">
+                <propertyInstance
+                  Id="143d017e-a1f2-4b18-aedc-5b3245bf5f83"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d45fa9fd-dad9-4011-9994-6dcd5b3cb560">
+                <propertyInstance
+                  Id="a9da5037-929b-4261-961c-68ebcbf57207"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="96c2437b-1052-4cf3-944d-ce89e7dc33f2">
+            <interfaceMoniker
+              Id="5ab9f4e2-0a76-470b-8eca-7426fb0f442a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package3_1425.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="50a1ca6e-de75-4771-a7f8-750c468df46d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a0668175-20ec-409c-a086-c7fbb86ada4d"
+              LastKnownName="Page"
+              LastKnownLocation="Package4_1425.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a0b95dd4-c21d-4da0-a622-257950d4c45d"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="06d77c59-15e7-4de7-931b-16fba0c3ac98"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f01763b8-04ea-437a-b70d-a052cea7bad3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1234f9ac-e929-463f-a084-4a0a1a4f3ae6">
+                    <propertyInstance
+                      Id="3b15ee9f-103b-4261-9473-6a797ff98458"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d48021ec-2adc-4a04-bcf8-78bcb7e4aa45">
+                    <propertyInstance
+                      Id="f5b27cc3-204d-4f15-b1d9-d4d0a86944ac"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8ffed54-726a-430e-8936-9a908626fc3c">
+                    <propertyInstance
+                      Id="c608a0cc-2031-435e-b186-a0a53ffa04ad"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99577388-1781-4ae5-b3a2-a8c50ee25e38">
+                    <propertyInstance
+                      Id="d711599d-cc23-4ace-9b96-9e99cdc54c5d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80a0e0da-2e93-433d-973e-46cd3912dc2e">
+                    <propertyInstance
+                      Id="21841834-cbf8-4e78-9a55-f804ac1843d8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="UMLBudgetApplication.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="340dba98-4390-43b7-9f05-ad65c3a2a544"
+            name="BudgetInterface"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="366128b5-7a60-4971-b4d5-2c0c2d6e2a3d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d763ac21-e976-4e0f-a11e-dd36aa50b5d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5efc1a6-0f87-4f4c-9c49-e7b04a713ea2">
+                    <propertyInstance
+                      Id="a029ba18-63ff-43b2-9ea6-82f5e97ba0f8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6b9b4fa-9841-4a41-8690-de9ccf1998ff">
+                    <propertyInstance
+                      Id="b63f490e-7eb2-41b2-b3af-defe0a550a6c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b44a139-1871-4daf-bd17-9022b09cdfb3">
+                    <propertyInstance
+                      Id="c35af46e-6eb5-4e60-8145-1af474ea74c0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="346d1cec-240f-48a3-9cf5-82214f507f10">
+                    <propertyInstance
+                      Id="1f0ee802-07bf-48e4-aaad-3360648ceff8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9905af74-dd37-4a7f-bd31-05c62b798817">
+                    <propertyInstance
+                      Id="54d8fc31-1450-41da-82df-315f5bcfd735"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e442efc-93e3-4442-8b62-55a8bdb40d52">
+                    <propertyInstance
+                      Id="86e88b21-6146-4b7d-86f1-423e3e2f6d39"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="19cd3096-8396-490e-aaa7-4a9672fb46e8"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5f5263ad-90e2-4945-861b-478c68355ab4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="579675ec-6fa9-4efe-a146-9f9b3537b61f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1a03ffe-b7c2-4537-9213-4c31b185e8eb">
+                    <propertyInstance
+                      Id="dfb17b9a-7bf7-42b8-99b2-98a26673e252"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="810a5b3e-1408-41f9-9507-4c678aba2b4c">
+                    <propertyInstance
+                      Id="60a43c4f-77fe-4312-b7e3-406d0da371f5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c8f6ff3-8c67-45dc-90ee-9ac91821edfc">
+                    <propertyInstance
+                      Id="93611a98-3d08-4cf2-b93f-1fb043c75a68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b17c75e-c67b-4630-8ef2-8347e613c5e4">
+                    <propertyInstance
+                      Id="6562738c-7680-45b3-8313-cb44c5f1f64e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ba4d372-4367-461e-b9a5-c25145e2f61d">
+                    <propertyInstance
+                      Id="138dea53-83db-45a3-9603-33d47fb2de3b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="251736e8-9eab-4ef8-96b6-e9889d35d7a2">
+                    <propertyInstance
+                      Id="1001a3fa-0b86-4026-80ed-0fd062fc5643"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f8304cd5-36ea-4de4-90db-cd33a3d537fc"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="835d9a19-0322-402d-9069-e5c7f4221d4b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cb51dfc4-f516-4468-9b1e-d280a0796213"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cfe6e14-6871-4b2d-95e6-a4de04db0e28">
+                    <propertyInstance
+                      Id="1b45726b-8df7-4e5c-b6e7-3f10318416f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d3d7910-08de-4a07-8829-cf635fe2a298">
+                    <propertyInstance
+                      Id="281c4c46-53e0-4ef2-99c5-8474fffb56a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a26b4d9-ccac-4cac-99e8-14098015a54a">
+                    <propertyInstance
+                      Id="726c972d-2bb8-4962-aa50-d432b16e5cd5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15059f1c-020b-47ca-a37f-096000949d6a">
+                    <propertyInstance
+                      Id="db072bbe-9965-4416-8289-09d6b0ae4ce5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3332f974-6023-43fe-ba67-67fe903dc8da">
+                    <propertyInstance
+                      Id="901d8558-1fd3-426a-97ba-32aa2b035bb3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86fb6815-b134-45a8-9e08-faad3f6ecfce">
+                    <propertyInstance
+                      Id="f06736a7-fe0d-4f04-80ef-63caabb998ff"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f49aaf84-c3d3-42e2-b1da-3bafa50cd0d4"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3c1376c8-c0b6-4c9e-b623-fe23760c6e9a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="UMLBudgetApplication.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26e008b4-fe28-42f5-b374-3728c6a3e72e"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d9f3df5a-07b1-425b-abc4-900a602ac6e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DBudgetInterface Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f2961697-afe7-4053-8ea2-f4793f5e2d44"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="619dd513-328d-43d4-a24f-860978ef72d1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="631ee2f6-b474-48af-be06-d4a8d4d95c4d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8036ccda-c595-4be3-81dc-7bfec7503f5f">
+                <propertyInstance
+                  Id="7ac4ea7e-60ce-4606-bb86-5f12b1c1c23d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5744339c-3201-4271-96c0-eb1d1d33e3ee">
+                <propertyInstance
+                  Id="0b2ef3df-34ea-4e19-9f71-b85a145a0268"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0a89f2a-1d4b-409f-90f3-31826d8a0160">
+                <propertyInstance
+                  Id="695edffa-5a05-46a0-94b5-ea74f4a25547"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af37b580-30e9-42c2-b5e4-be37fc72d3b3">
+                <propertyInstance
+                  Id="9600c95f-640e-4e98-919a-6a5176ece807"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2df5880c-ea4a-4cdf-87b5-68c59a04b9eb">
+                <propertyInstance
+                  Id="51019f95-bc32-4e95-bfe7-36658bd62081"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a15aeab3-dcaa-4533-b2fe-b91775dd2143">
+            <interfaceMoniker
+              Id="5ab9f4e2-0a76-470b-8eca-7426fb0f442a"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package3_1425.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="a9d03cbf-bf12-49b5-8c1e-7d3c62bc10cd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d046ad89-c733-4516-9e3b-ea63d3f46d0e"
+              LastKnownName="Window"
+              LastKnownLocation="Package2_1425.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="61a4349b-6031-4a38-be64-9a8bd20ec69d"
+            name="btnAccount"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="139c8f4b-5836-4b33-b482-e375e04d353a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DbtnAccount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b30c6ad-a8d2-40af-ae0f-80495b5181f9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bece50cb-cde4-4f4f-980d-91c26d955c22">
+                    <propertyInstance
+                      Id="e7101a95-9cc8-4e94-b0ba-186bc113e154"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="899d874f-d721-474f-8cc3-eaf925780c35">
+                    <propertyInstance
+                      Id="9fd562e0-6944-476b-b091-b1ec935dbade"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="414ebb47-b07c-4922-ba90-0dd96a8f1791">
+                    <propertyInstance
+                      Id="e00fbcb3-059a-4b86-a44a-e0262958f0a1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1142d7fa-c762-46a1-8c2d-0998aae45351">
+                    <propertyInstance
+                      Id="26134de2-b5cd-4f83-ab48-9f7dc5792b5b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b26a265-c3d7-4ece-8a2c-f1917fdf9b58">
+                    <propertyInstance
+                      Id="7772c386-20d0-4c59-92ff-067863e7e415"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="45fd31dd-d5e8-421a-9b65-b93aa574cb6d"
+                LastKnownName="Button"
+                LastKnownLocation="Package4_1425.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="20160380-40e1-47bf-a9cb-cebab08b5a2e"
+            name="btnAddAccount"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9248ab2c-ba49-47e8-b48a-c17d6ea62e6c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DbtnAddAccount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="993b5f10-9a09-4903-87c4-eb4b11fe8084"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3aefc27-dfbe-4485-ba66-e3b4e1ce491f">
+                    <propertyInstance
+                      Id="a3ed83fb-62c2-4112-9966-6b9a995d3ce3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aadb6d79-3388-46a2-9c43-ba2d0c4ebdf2">
+                    <propertyInstance
+                      Id="090deea1-4837-4f35-9457-2651324d20e3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32f6f993-825d-43b8-a044-4be138d7839b">
+                    <propertyInstance
+                      Id="fe108221-c6f1-4ea8-8739-e563d384a036"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="720a73bc-9a7b-418a-bec7-6d76bef5d0e7">
+                    <propertyInstance
+                      Id="361efa19-2215-4af9-82ec-fe6fb1d291ac"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83a43d99-bb82-4e57-b1c2-20badb1c0d06">
+                    <propertyInstance
+                      Id="4bc16365-d773-4dfa-8935-0e7f3037110a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="45fd31dd-d5e8-421a-9b65-b93aa574cb6d"
+                LastKnownName="Button"
+                LastKnownLocation="Package4_1425.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f18dad4d-0e35-4d03-8ada-fbe54b4cfa3d"
+            name="btnBudget"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0d4a93e9-7656-4828-9034-529ada7e86f0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DbtnBudget"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="171de8a5-b9b8-416b-879a-0a815d83d685"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a285388-fd8f-4c41-a9ff-360f528d91fc">
+                    <propertyInstance
+                      Id="19d5a4dd-0482-4604-9d27-a789a7cd01ce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06164332-319d-4341-82e4-84b070a3b78f">
+                    <propertyInstance
+                      Id="29a44a07-646a-4dba-80fe-586b64bfd85d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e39e7d5b-f0a7-4ecb-8781-4e9a166c98dc">
+                    <propertyInstance
+                      Id="1dfcabfc-8296-4fc0-a033-64484d2c1922"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38dd5e40-dabd-4907-9128-40a3ca7fa31a">
+                    <propertyInstance
+                      Id="19b53a98-b6f4-4057-9f46-73f51f76d9ac"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65873666-6bda-4e2e-b296-bfd28fb57180">
+                    <propertyInstance
+                      Id="f2465a50-4c85-43c8-a2b9-8d8f23cb221f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="45fd31dd-d5e8-421a-9b65-b93aa574cb6d"
+                LastKnownName="Button"
+                LastKnownLocation="Package4_1425.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fb7c1093-6fa9-431e-bcb0-fce6cc435cdd"
+            name="btnReports"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ef3af063-0e33-4dce-992a-fe0739867474"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DbtnReports"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6acf6a8e-6278-43a3-8a63-9620d4d11054"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4e18ee2-bd06-4351-9475-2a419c66d016">
+                    <propertyInstance
+                      Id="210c5f6a-5a39-4ee6-92b0-886dc2487c38"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2289dbcd-aad4-4107-802d-3b574f4e82d2">
+                    <propertyInstance
+                      Id="f93832d8-6ae2-44f8-ac3c-a0ccbd4d3449"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7747d17-b149-4db1-aabe-35832997d48c">
+                    <propertyInstance
+                      Id="5d449043-4301-4338-a685-526b67d108dd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af33b321-301a-427d-9160-3b6699a69177">
+                    <propertyInstance
+                      Id="30ddb0c2-1a13-4863-b292-656c2b96b51d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54ca1d45-bc88-4c88-9cc9-b83d3348f762">
+                    <propertyInstance
+                      Id="0882ee58-3f25-4f06-82a0-1e1496a70d3c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="45fd31dd-d5e8-421a-9b65-b93aa574cb6d"
+                LastKnownName="Button"
+                LastKnownLocation="Package4_1425.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b0ed64d4-9fe6-4c0c-84d1-e057296bb9cb"
+            name="txtblockTitle"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="02ec1c20-7298-49b9-ab4b-690e9aa0b2d7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DtxtblockTitle"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="03579cf5-fd8d-4d4f-b2b8-a697ea5d3c01"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="634c81bb-fa40-4b33-b85f-31786d19727f">
+                    <propertyInstance
+                      Id="cc3d3019-b57a-4911-9a74-18764b0d8a95"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23149464-e87b-463a-9147-4a9360a9b4f6">
+                    <propertyInstance
+                      Id="c8297da1-a9d7-4db2-b561-4e8d03ae9a31"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92f4b3cb-2e1b-41a4-a234-b54a17b34b6f">
+                    <propertyInstance
+                      Id="3c9787d4-d008-4beb-b3bc-d5e722a360ca"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3db04550-e0e0-4c11-aba8-39b80f8fe876">
+                    <propertyInstance
+                      Id="de53fcf8-22da-4325-a189-f25911f560b7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d6c4cee-862b-45dc-96a3-1e8f1555c310">
+                    <propertyInstance
+                      Id="e3b1a573-123c-4d47-9881-ef59ce776e88"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3852be4f-1754-4c3b-aee0-d6b26b50549c"
+                LastKnownName="TextBlock"
+                LastKnownLocation="Package4_1425.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eda822b9-832d-4fa5-90e1-ff7b5d6c9252"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6709ee3c-4e9f-4efd-91fd-b1a301383470"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="60ad62f3-b710-4012-85d2-65c4acf33761"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd9e3ca1-5939-4358-aa96-96a96bd75d0e">
+                    <propertyInstance
+                      Id="7f67d55d-4d86-4d49-be73-fa799f42952b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c1c95cc-b348-4df5-a764-dd6f067953df">
+                    <propertyInstance
+                      Id="e7b05fde-f85e-4161-84ab-f86ae5090e72"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eca6865e-51ad-441f-abd6-8a676b6b73d9">
+                    <propertyInstance
+                      Id="33d8636f-4ebd-4a4b-9174-a8cf9f5576ec"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7754882c-5f2b-45d7-b678-f2e62498fb93">
+                    <propertyInstance
+                      Id="9e11a767-5769-423b-b6bb-e44e0bbf2718"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3454c7b7-89d9-432f-83e1-573d1e61fd09">
+                    <propertyInstance
+                      Id="ae6735ad-1b28-45da-b32a-23a8325f200f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="UMLBudgetApplication.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="74ccf137-67dc-423c-a7c9-a34d80db9fc6"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b74f2609-b0cc-40b6-aef9-11660d0baeaf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8152f3e-c881-42b6-bbc6-7ec512dcfe3f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f19887c-160a-43d7-b8d1-31be75992321">
+                    <propertyInstance
+                      Id="a847a97d-1fb8-470f-82b9-f012b7c9734e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0da0db93-cee1-4a87-a5b8-24e94392ccd7">
+                    <propertyInstance
+                      Id="4b03df89-715c-479c-9987-ba3c906e1c89"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="496b5019-65ba-46d4-b921-8ae713d1e466">
+                    <propertyInstance
+                      Id="4cacabcb-eb78-4dda-88f5-9c0ac26027ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29ae8cf5-cef5-4f4b-b466-fd6d786995ef">
+                    <propertyInstance
+                      Id="a27c1278-d328-4931-b14a-c73b54b06414"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426b381a-bc1b-49df-9351-fad381f3aaeb">
+                    <propertyInstance
+                      Id="881e828b-ffd7-4a6b-85c0-67716c59f0e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a5e1efe-087b-494f-8927-3e34279feaf3">
+                    <propertyInstance
+                      Id="710bff0a-63c7-47fc-adab-a820156c72e8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="281ccad0-68b0-4bb8-8ef2-c2f69ae9b379"
+            name="btnAccount_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e4b9e2dd-561b-4e60-a0f3-d0cbd607e204"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnAccount_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ec7f3c85-5bec-431b-9a3e-601439957d90"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c4d7dc3-aa67-4f67-9de3-9d24e8f01586">
+                    <propertyInstance
+                      Id="8cafb8b2-6688-443b-b56d-78d86334e198"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bddc056-8c4a-4374-aab9-474d1b6dcb5d">
+                    <propertyInstance
+                      Id="0b864589-641a-431b-b7c7-cf3dffd15d41"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="561790f0-b568-455d-b89f-b48f9b3e956c">
+                    <propertyInstance
+                      Id="59ea3d95-69b2-4648-85fd-f1c357e73f3c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63de9275-4638-444f-b1b2-b559743d93a6">
+                    <propertyInstance
+                      Id="8b2e68a5-7ff9-4176-8ff0-2de8e246ecde"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f2f9b8f-b3c1-4f34-81c2-9ee5af73d0a4">
+                    <propertyInstance
+                      Id="e67a10a3-b59f-47bd-b17b-503efa101a9f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="510f66e8-395e-457a-ab32-d64e1d7bc20c">
+                    <propertyInstance
+                      Id="e65f5b72-f635-4ebf-b7e0-28462ae50c10"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a69cfc9-7a01-4193-a067-03f07e152125"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3cc808d3-522d-4667-adff-ee112a5c9490"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnAccount_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b2b5a9ef-b1f0-44e8-bcdb-c9b6f0e27336"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ebce67cf-d7df-48ee-a7da-42312153f353"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnAccount_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="754bfdbd-7829-4b12-abd8-796e45d13066"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b685a84-d45b-4d77-9d77-cfeb55f50b67"
+            name="btnBudget_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="725423bc-777c-495d-85e0-434f665e6fe5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnBudget_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5afe1478-e4b6-4521-b4f5-b6356e303fdc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5412fa85-bb57-4b7f-85bc-5805bceb4081">
+                    <propertyInstance
+                      Id="075a59b0-77a7-4c39-90b3-99e165518294"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cf66982-25bb-4390-a1ca-815a4a523e62">
+                    <propertyInstance
+                      Id="626eeb14-acc1-410b-b738-3a0075fc06f6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345da654-97da-4568-8431-b428ecbe1d1b">
+                    <propertyInstance
+                      Id="d0eb27fb-e6df-487a-b393-52d1fee6d422"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="645882c1-3918-4360-b7aa-b64ed05373f3">
+                    <propertyInstance
+                      Id="d1761fc0-6495-4309-aa2c-da9d284b6f5a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f66adcc7-0007-4e3d-982e-113ee1919caa">
+                    <propertyInstance
+                      Id="e3dd3007-8b68-45bc-a8a2-3cd0d833c898"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be3dedc4-ba69-4b79-89fb-932d30fd17b8">
+                    <propertyInstance
+                      Id="37ba9a9c-81c6-452a-89c4-d1b24a866776"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="221f6e33-e6df-485b-84e7-04aa81e6bacf"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2c945bb8-6879-44ac-8246-030909cdbd5d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnBudget_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a489356-70a0-499b-92e5-dd379de29564"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="76fc3adb-a9c1-4641-86ae-1639799eafc8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnBudget_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="754bfdbd-7829-4b12-abd8-796e45d13066"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="00682c41-46a3-4631-b2d0-c2797290095b"
+            name="btnReports_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93b58c60-355e-4cf1-8e38-c6cc43faff2a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnReports_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a895651-ef13-4f1a-8fa5-40c6e7d27028"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce84b0a2-c870-42c3-a919-0b6e924f1ee1">
+                    <propertyInstance
+                      Id="e4a0e8ad-bb31-4b45-8f13-667b7f8597e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae4ee44a-2599-446c-88a6-cdf33fae5ba8">
+                    <propertyInstance
+                      Id="79ce0c99-cfc4-4b1c-8846-aa2621fe3883"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8728e78d-c8db-4d6d-80e1-94c5234dc868">
+                    <propertyInstance
+                      Id="9705eee1-1a59-4521-a722-b762c58eea99"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="568f22a1-41be-45ac-9945-2c6a0d4492ce">
+                    <propertyInstance
+                      Id="2a5da559-6ec0-49b2-972c-a7734e791dd7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d53fc2f-8999-4fc5-a17c-d6049c33db3b">
+                    <propertyInstance
+                      Id="178155dc-f28b-45ff-8e37-19218b78e396"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7f69405-cceb-4fa8-99ae-be21fa32f4e2">
+                    <propertyInstance
+                      Id="b816010a-a06c-4844-9d29-3905ac992dc6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53afe0f1-e222-4172-8716-6d3cc0f749c8"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="304f369f-1e8e-4eb1-8ec5-31863ff4d85d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnReports_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db7c1250-28be-41fd-9b8c-b9983067da97"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="66f6d040-fe76-448c-a0b2-ef5fe22d4ad2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DbtnReports_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="754bfdbd-7829-4b12-abd8-796e45d13066"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="490eff85-fddf-4129-b6a3-1ec8eb4678a1"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9cf7b554-b75b-4022-962f-592244a81e39"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d3fbfe0e-39ea-4a5d-8af5-83810cec93bf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91973d54-a509-4e7b-bda9-b27009d7792e">
+                    <propertyInstance
+                      Id="7773bf14-5b72-4266-b16f-d0d7f7daa7f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9a5bbd1-52cf-48fa-aad5-718a278c6ede">
+                    <propertyInstance
+                      Id="e3553b20-2afa-4961-bf47-9cc8fc0ede2e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97e3a94a-66e6-4fd8-9074-4ae2a49aeb0e">
+                    <propertyInstance
+                      Id="005427fb-dbc4-4c71-810c-3efc9b334839"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d93b3ad-5b04-4e95-8055-5e5f85546a77">
+                    <propertyInstance
+                      Id="c297a36c-87f6-4801-a9c8-21d383d37684"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b99c51b2-8833-4963-aaff-983810d6bac8">
+                    <propertyInstance
+                      Id="451fe6f9-b68f-4065-8c00-7f31643c442c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc64d529-cad4-4dba-997a-2e3ec9dc13e6">
+                    <propertyInstance
+                      Id="135bc11d-f14b-4c21-be36-b1356d3731ae"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6d602e77-9192-4a6a-935b-4f3d528d164c"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9dd5e64c-aaf4-47cc-b2b0-40004d600e1c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="14add908-a14e-4338-92ac-ac93a78bcb1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f3f0833-7823-4d1e-8cc8-f0e2203e4317">
+                    <propertyInstance
+                      Id="649885e3-42fe-4bc8-b4cd-930e957cebc4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="568bae29-0a15-43ab-837c-7befadbf2d07">
+                    <propertyInstance
+                      Id="0131f0c9-20d5-4e18-8149-11f2f1e7ce6a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e07fc9e6-3367-4e1b-86ba-bce57440a061">
+                    <propertyInstance
+                      Id="26baf11d-96c5-4fd5-8aef-2bc05bbc8f14"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aa679b2-c4d3-433e-a977-8b9faec1f940">
+                    <propertyInstance
+                      Id="b9062d86-20fd-4bce-99f3-3a7c9eb3efc8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ffb7334-d3e8-406a-9ecc-8cb940060676">
+                    <propertyInstance
+                      Id="a7df3572-d402-4f85-b0ad-582b9b501a0b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdaccf74-4b80-4b77-93eb-1d3bb710b6c6">
+                    <propertyInstance
+                      Id="4175c8cb-0f72-4827-80ef-25a493b40169"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71f63f1a-861b-47ec-8389-8b39c50184c6"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="05f13868-073e-4c9a-9882-7d90c3d72fd7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="UMLBudgetApplication.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3bbae226-9f17-4276-b4fa-20783606f44a"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="61a0f781-8b2f-4875-b739-94a7013040fb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FMterrill_Li%2FDropbox%2FC%2523%2FWeek 7%2FBudgetApplication%2FBudgetApplication%2Fbin%2FDebug%2FBudgetApplication.exe&quot; Namespace%3DBudgetApplication Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="92acaa27-6098-41a7-9eb5-307bc3711c5b"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1425.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
