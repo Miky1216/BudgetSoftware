@@ -18,9 +18,9 @@ namespace BudgetApplication
     /// <summary>
     /// Interaction logic for ReportsInterface.xaml
     /// </summary>
-    public partial class ReportsInterface : Page
+    public partial class ReportsI : Page
     {
-        public ReportsInterface()
+        public ReportsI()
         {
             InitializeComponent();
         }

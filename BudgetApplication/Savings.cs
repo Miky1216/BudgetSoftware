@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace BudgetApplication
 {
-    public class Accounts
+    public class Savings : Accounts
     {
-        public string name;
-        public double balance;
-        protected string accounts;
-        public Accounts()
+        public Savings()
         {
 
         }
-        public void ChangeName()
+        public void Deposit()
+        {
+
+        }
+        public void Withdrawal()
         {
 
         }

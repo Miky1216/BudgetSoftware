@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace BudgetApplication
 {
-    public class Accounts
+    public class Reports
     {
-        public string name;
-        public double balance;
-        protected string accounts;
-        public Accounts()
+        public Reports()
         {
 
         }
-        public void ChangeName()
+        public void GetAccountStatus()
+        {
+
+        }
+        public void GetBudgetVSActual()
+        {
+
+        }
+        public void GetSummary()
         {
 
         }

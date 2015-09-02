@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace BudgetApplication
 {
-    public class Accounts
+    public class Database
     {
-        public string name;
-        public double balance;
-        protected string accounts;
-        public Accounts()
+        public Database()
         {
 
         }
-        public void ChangeName()
+        public void GetData()
+        {
+
+        }
+        public void InsertData()
         {
 
         }

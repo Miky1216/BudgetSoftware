@@ -18,9 +18,9 @@ namespace BudgetApplication
     /// <summary>
     /// Interaction logic for AccountsInterface.xaml
     /// </summary>
-    public partial class AccountsInterface : System.Windows.Controls.Page
+    public partial class AccountsI : System.Windows.Controls.Page
     {
-        public AccountsInterface()
+        public AccountsI()
         {
             InitializeComponent();
         }
@@ -38,6 +38,17 @@ namespace BudgetApplication
         private void btnReportsAccount_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnAddAccount_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPostTransaction_Click(object sender, RoutedEventArgs e)
+        {
+            Transaction transaction = new Transaction();
+            transaction.Show();
         }
     }
 }

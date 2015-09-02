@@ -28,21 +28,26 @@ namespace BudgetApplication
 
         private void btnAccount_Click(object sender, RoutedEventArgs e)
         {
-            AccountsInterface accountInterface = new AccountsInterface();
+            AccountsI accountInterface = new AccountsI();
             
             
         }
 
         private void btnBudget_Click(object sender, RoutedEventArgs e)
         {
-            BudgetInterface budgetInterface = new BudgetInterface();
+            BudgetI budgetInterface = new BudgetI();
             
         }
 
         private void btnReports_Click(object sender, RoutedEventArgs e)
         {
-            ReportsInterface reportInterface = new ReportsInterface();
+            ReportsI reportInterface = new ReportsI();
             
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

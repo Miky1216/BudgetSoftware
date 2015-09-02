@@ -13,14 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace BudgetApplication
 {
     /// <summary>
     /// Interaction logic for BudgetInterface.xaml
     /// </summary>
-    public partial class BudgetInterface : Page
+    public partial class BudgetI : Page
     {
-        public BudgetInterface()
+        public BudgetI()
         {
             InitializeComponent();
         }
@@ -36,6 +37,16 @@ namespace BudgetApplication
         }
 
         private void btnReportBudget_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddCategory_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddItem_Click(object sender, RoutedEventArgs e)
         {
 
         }

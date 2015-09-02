@@ -10,21 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BudgetApplication
 {
     /// <summary>
-    /// Interaction logic for MainPage.xaml
+    /// Interaction logic for Transaction.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class Transaction : Window
     {
-        public MainPage()
+        public Transaction()
         {
             InitializeComponent();
         }
 
-
+        private void btnPost_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
