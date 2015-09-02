@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace BudgetApplication
 {
     /// <summary>
-    /// Interaction logic for Transaction.xaml
+    /// Interaction logic for AccountType.xaml
     /// </summary>
-    public partial class Transaction : Window
+    public partial class AccountType : Window
     {
-        public Transaction()
+        public AccountType()
         {
             InitializeComponent();
         }
 
-        private void btnPost_Click(object sender, RoutedEventArgs e)
+        private void btnAddAccount_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

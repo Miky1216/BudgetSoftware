@@ -26,7 +26,7 @@
             <Hyperlink NavigateUri="ReportsInterface.xaml">Reports</Hyperlink>
         </Button>
 
-        <Button x:Name="btnAddAccount" Content="Add Account" HorizontalAlignment="Left" Margin="33,114,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.16,0.182"/>
+        <Button x:Name="btnAddAccount" Content="Add Account" HorizontalAlignment="Left" Margin="33,114,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.16,0.182" Click="btnAddAccount_Click_1"/>
         <Button x:Name="btnPostTransaction" Content="Post Transaction" HorizontalAlignment="Left" Margin="22,156,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="-0.227,-0.045" Click="btnPostTransaction_Click"/>
         
         <Viewbox Margin="10,-41,52,298" Grid.Column="1">
