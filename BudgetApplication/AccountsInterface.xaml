@@ -4,8 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="525"
-	Title="AccountsInterface">
+      
+	Title="AccountsInterface" WindowHeight="600" WindowWidth="800" Height="Auto" Width="Auto">
 
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
@@ -13,27 +13,43 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" MinWidth="156"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Button x:Name="btnAccountAccount" HorizontalAlignment="Left" Margin="33,78,0,0" VerticalAlignment="Top" Width="75" Click="btnAccountAccount_Click">
             <Hyperlink NavigateUri="AccountsInterface.xaml">Accounts</Hyperlink>
         </Button>
-        <Button x:Name="btnBudgetAccount" HorizontalAlignment="Left" Margin="33,196,0,0" VerticalAlignment="Top" Width="75" Click="btnBudgetAccount_Click">
+        <Button x:Name="btnBudgetAccount" HorizontalAlignment="Left" Margin="33,152,0,0" VerticalAlignment="Top" Width="75" Click="btnBudgetAccount_Click">
             <Hyperlink NavigateUri="BudgetInterface.xaml">Budget</Hyperlink>
         </Button>
-        <Button x:Name="btnReportsAccount" HorizontalAlignment="Left" Margin="33,234,0,0" VerticalAlignment="Top" Width="75" Click="btnReportsAccount_Click">
+        <Button x:Name="btnReportsAccount" HorizontalAlignment="Left" Margin="33,189,0,0" VerticalAlignment="Top" Width="75" Click="btnReportsAccount_Click">
             <Hyperlink NavigateUri="ReportsInterface.xaml">Reports</Hyperlink>
         </Button>
 
         <Button x:Name="btnAddAccount" Content="Add Account" HorizontalAlignment="Left" Margin="33,114,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.16,0.182" Click="btnAddAccount_Click_1"/>
-        <Button x:Name="btnPostTransaction" Content="Post Transaction" HorizontalAlignment="Left" Margin="22,156,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="-0.227,-0.045" Click="btnPostTransaction_Click"/>
-        
-        <Viewbox Margin="10,-41,52,298" Grid.Column="1">
-            <DataGrid Grid.Column="1" x:Name="datagridBudget" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="498" />
-        </Viewbox>
-        
+        <Button x:Name="btnPostTransaction" Content="Post Transaction" HorizontalAlignment="Left" Margin="43,297,0,0" VerticalAlignment="Top" Width="98" RenderTransformOrigin="-0.227,-0.045" Click="btnPostTransaction_Click" Grid.Column="1"/>
+
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" TextAlignment ="Center" Text="Accounts" VerticalAlignment="Top" Height="37" Width="132" FontSize="22" FontWeight="Bold"/>
-        
+
+        <Viewbox Margin="56,-27,157,177" Grid.Column="2">
+            <DataGrid Grid.Column="1" x:Name="datagridAccount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="498" SelectionChanged="datagridAccount_SelectionChanged" />
+        </Viewbox>
+
+
+        <TextBlock Grid.Column="1" x:Name="txtblockDate" HorizontalAlignment="Left" Margin="10,78,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top"/>
+        <DatePicker Grid.Column="1" x:Name="dateSelection" HorizontalAlignment="Left" Margin="85,74,0,0" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockMoneyType" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Money Type" VerticalAlignment="Top" RenderTransformOrigin="0.48,-1.125"/>
+        <TextBox Grid.Column="1" x:Name="txtMoneyType" HorizontalAlignment="Left" Height="23" Margin="85,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockItem" HorizontalAlignment="Left" Margin="10,168,0,0" TextWrapping="Wrap" Text="Item" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" x:Name="txtItem" HorizontalAlignment="Left" Height="23" Margin="85,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockMoneyIn" HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" Text="Money In" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" x:Name="txtMoneyIn" HorizontalAlignment="Left" Height="23" Margin="85,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockMoneyOut" HorizontalAlignment="Left" Margin="10,256,0,0" TextWrapping="Wrap" Text="Money Out" VerticalAlignment="Top" RenderTransformOrigin="0.56,-0.5"/>
+        <TextBox Grid.Column="1" x:Name="txtMoneyOut" HorizontalAlignment="Left" Height="23" Margin="85,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="20,30,0,0" TextWrapping="Wrap" Text="Add New Transaction" VerticalAlignment="Top" FontSize="18"/>
+
+
+
     </Grid>
 </Page>

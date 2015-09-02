@@ -26,6 +26,8 @@ namespace BudgetApplication
 
         private void btnPost_Click(object sender, RoutedEventArgs e)
         {
+            
+            //AccountsI.datagridBudget.Rows.Add(dateSelection.Text, txtMoneyType.Text, txtItem.Text, txtMoneyIn.Text, txtMoneyOut.Text);
             this.Close();
         }
     }
