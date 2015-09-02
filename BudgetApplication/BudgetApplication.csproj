@@ -55,7 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AccountsInterfaceViewModel.cs" />
     <Compile Include="AccountType.xaml.cs">
       <DependentUpon>AccountType.xaml</DependentUpon>
     </Compile>
@@ -64,8 +63,6 @@
     <Compile Include="Checking.cs" />
     <Compile Include="Credit.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="EntityViewModel.cs" />
     <Compile Include="IBudget.cs" />
     <Compile Include="Reports.cs" />
     <Compile Include="ReportsInterface.xaml.cs">
