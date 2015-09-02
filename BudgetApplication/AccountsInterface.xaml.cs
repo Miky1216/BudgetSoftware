@@ -39,16 +39,15 @@ namespace BudgetApplication
         {
 
         }
-
-        private void btnAddAccount_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btnPostTransaction_Click(object sender, RoutedEventArgs e)
         {
             Transaction transaction = new Transaction();
             transaction.Show();
+        }
+
+        private void btnAddAccount_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
