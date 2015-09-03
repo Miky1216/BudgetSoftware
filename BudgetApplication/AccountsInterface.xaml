@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.Resources>
-            <XmlDataProvider x:Key="XMLData" XPath="TransactionInformation" Source="C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml">
+            <XmlDataProvider x:Key="XMLData" XPath="TransactionInformation" Source="Transactions.xml">
             </XmlDataProvider>
         </Grid.Resources>
 
