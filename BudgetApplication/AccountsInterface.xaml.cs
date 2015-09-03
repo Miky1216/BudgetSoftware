@@ -36,7 +36,7 @@ namespace BudgetApplication
         {
             InitializeComponent();
 
-            var xml = XDocument.Load("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml").Root;
+            var xml = XDocument.Load("Transactions.xml").Root;
             datagridAccount.DataContext = xml;
             
 
@@ -101,7 +101,7 @@ namespace BudgetApplication
             try
             {
             XmlDocument doc = new XmlDocument();
-            doc.Load("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
+            doc.Load("Transactions.xml");
             XmlNode transactions = doc.CreateElement("Transactions");
             
             XmlNode date = doc.CreateElement("Date");
@@ -124,7 +124,7 @@ namespace BudgetApplication
             transactions.AppendChild(depositwithdrawal);
             doc.DocumentElement.AppendChild(transactions);
 
-            doc.Save("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
+            doc.Save("Transactions.xml");
             }
             catch (Exception ex)
             {
