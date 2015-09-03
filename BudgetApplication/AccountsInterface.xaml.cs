@@ -82,9 +82,10 @@ namespace BudgetApplication
         {
 
         }
+        
         private void btnPostTransaction_Click(object sender, RoutedEventArgs e)
         {
-            try
+            /*try
             {
                 TransactionInformation info = new TransactionInformation();
                 info.Date = dateSelection.Text;
@@ -96,10 +97,40 @@ namespace BudgetApplication
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
+            try
+            {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
+            XmlNode transactions = doc.CreateElement("Transactions");
+            
+            XmlNode date = doc.CreateElement("Date");
+            date.InnerText = dateSelection.Text;
+            transactions.AppendChild(date);
+            doc.DocumentElement.AppendChild(transactions);
+            
+            XmlNode item = doc.CreateElement("Item");
+            item.InnerText = txtItem.Text;
+            transactions.AppendChild(item);
+            doc.DocumentElement.AppendChild(transactions);
 
+            XmlNode amount = doc.CreateElement("Amount");
+            amount.InnerText = txtAmount.Text;
+            transactions.AppendChild(amount);
+            doc.DocumentElement.AppendChild(transactions);
+
+            XmlNode depositwithdrawal = doc.CreateElement("DepositWithdrawal");
+            depositwithdrawal.InnerText = txtdepositwithdrawal.Text;
+            transactions.AppendChild(depositwithdrawal);
+            doc.DocumentElement.AppendChild(transactions);
+
+            doc.Save("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-        //C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml
         private void btnAddAccount_Click_1(object sender, RoutedEventArgs e)
         {
             

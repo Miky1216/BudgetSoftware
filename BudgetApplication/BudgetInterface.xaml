@@ -26,6 +26,9 @@
         <Button x:Name="btnReportBudget" HorizontalAlignment="Left" Margin="33,161,0,0" VerticalAlignment="Top" Width="75" Click="btnReportBudget_Click" Height="22">
             <Hyperlink NavigateUri="ReportsInterface.xaml">Reports</Hyperlink>
         </Button>
+        <Button x:Name="btnHome1" HorizontalAlignment="Left" Margin="33,202,0,0" VerticalAlignment="Top" Width="75">
+            <Hyperlink NavigateUri="MainWindow.xaml">Home</Hyperlink>
+        </Button>
 
         <Button x:Name="btnAddCategory" Content="Add Category" HorizontalAlignment="Left" Margin="58,246,0,0" VerticalAlignment="Top" Width="94" Click="btnAddCategory_Click" Grid.Column="1"/>
         <Button x:Name="btnAddItem" Content="Add Item" Margin="58,454,92,0" VerticalAlignment="Top" Click="btnAddItem_Click" Grid.Column="1"/>
@@ -33,7 +36,15 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" TextAlignment ="Center" Text="Budget" VerticalAlignment="Top" Height="37" Width="132" FontSize="22" FontWeight="Bold"/>
 
         <Viewbox Margin="56,-27,157,177" Grid.Column="2">
-            <DataGrid Grid.Column="2" x:Name="datagridBudget" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="498" SelectionChanged="datagridBudget_SelectionChanged" />
+            <DataGrid Grid.Column="2" x:Name="datagridBudget" HorizontalAlignment="Left" VerticalAlignment="Top" 
+             Margin="37,64,0,0" Height="348" Width="Auto" SelectionChanged="datagridBudget_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Item"           />
+                    <DataGridTextColumn Header="Budgeted Cost"  />
+                    <DataGridTextColumn Header="Actual Cost"    />
+                    <DataGridTextColumn Header="Difference Budget/Actual"     />
+                </DataGrid.Columns>
+            </DataGrid> 
         </Viewbox>
 
         <TextBlock x:Name="txtblockCategory" Grid.Column="1" HorizontalAlignment="Left" Margin="27,78,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>

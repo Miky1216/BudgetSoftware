@@ -25,6 +25,9 @@
         <Button x:Name="btnReportReport" HorizontalAlignment="Left" Margin="33,159,0,0" VerticalAlignment="Top" Width="75" Click="btnReportReport_Click">
             <Hyperlink NavigateUri="ReportsInterface.xaml">Reports</Hyperlink>
         </Button>
+        <Button x:Name="btnHome2" HorizontalAlignment="Left" Margin="33,200,0,0" VerticalAlignment="Top" Width="75">
+            <Hyperlink NavigateUri="MainWindow.xaml">Home</Hyperlink>
+        </Button>
 
         <Viewbox Margin="56,-27,53,292" Grid.Column="1">
             <DataGrid Grid.Column="1" x:Name="datagridBudget" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="498" />

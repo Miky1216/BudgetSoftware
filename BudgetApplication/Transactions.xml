@@ -1,9 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TransactionInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Transactions>
-  <Date>9/2/2015</Date>
-  <Item>Movie</Item>
-  <Amount>40</Amount>
-  <DepositWithdrawal>Withdrawal</DepositWithdrawal>
+    <Date>9/8/2015</Date>
+    <Item>Movies</Item>
+    <Amount>40</Amount>
+    <DepositWithdrawal>Withdrawal</DepositWithdrawal>
+  </Transactions>
+  <Transactions>
+    <Date>9/8/2015</Date>
+    <Item>Dinner</Item>
+    <Amount>60</Amount>
+    <DepositWithdrawal>Withdrawal</DepositWithdrawal>
+  </Transactions>
+  <Transactions>
+    <Date>9/9/2015</Date>
+    <Item>Stock Option</Item>
+    <Amount>500</Amount>
+    <DepositWithdrawal>Deposit</DepositWithdrawal>
   </Transactions>
 </TransactionInformation>

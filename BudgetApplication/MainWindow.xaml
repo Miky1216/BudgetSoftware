@@ -9,7 +9,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" MinWidth="156"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="635*"/>
         </Grid.ColumnDefinitions>
 
         <Button x:Name="btnAccount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,78,0,0" Width="75" Click="btnAccount_Click" Height="22">
@@ -23,8 +23,14 @@
         </Button>
         <DataGrid HorizontalAlignment="Left" Margin="8,243,0,0" VerticalAlignment="Top" Width="148" Height="265" SelectionChanged="DataGrid_SelectionChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="14,206,0,0" TextWrapping="Wrap" TextAlignment ="Center" Text="Balances" VerticalAlignment="Top" Height="37" Width="132" FontSize="22" FontWeight="Bold"/>
-        <Viewbox Grid.Column="1" Margin="0,-59,0,486">
-            <TextBlock Grid.Column="1"  x:Name="txtblockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="44" Margin="33,33,0,0" Width="250"><Run FontWeight="Bold" Text="Budgeting Your Life"/></TextBlock>
+
+        <Viewbox Grid.Column="1" Margin="0,-59,0,486" Grid.ColumnSpan="2">
+            <TextBlock Grid.Column="1"  x:Name="txtblockTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" 
+             FontSize="24" Height="44" Margin="33,33,0,0" Width="250"><Run FontWeight="Bold" Text="Budgeting Your Life"/></TextBlock>
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" HorizontalAlignment="Left" Height="281" Margin="53,227,0,0" VerticalAlignment="Top" Width="552" Grid.ColumnSpan="1">
+            <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="643" Margin="82,264,0,0" VerticalAlignment="Top" Width="1666" Grid.ColumnSpan="1"/>
         </Viewbox>
     </Grid>
 

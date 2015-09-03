@@ -12,7 +12,6 @@ namespace BudgetApplication
         private string item;
         private string amount;
         private string depositWithdrawal;
-        //private string transactions;
 
         public string Date
         {
