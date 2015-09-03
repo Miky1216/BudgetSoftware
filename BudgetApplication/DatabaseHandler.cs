@@ -28,7 +28,6 @@ namespace BudgetApplication
         // Creates a connection with our database file.
         void connectToDatabase()
         {
-            m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
             m_dbConnection = new SQLiteConnection("Data Source=budgetdatabase.sqlite;Version=3;");
             m_dbConnection.Open();
         }
