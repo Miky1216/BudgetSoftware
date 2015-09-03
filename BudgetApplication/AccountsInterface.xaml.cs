@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using System.IO;
+using System.Xml.Linq;
+using System.Xml;
 
 namespace BudgetApplication
 {
@@ -23,43 +27,47 @@ namespace BudgetApplication
         public struct MyAccountData
         {
             public string Date { get; set; }
-            public string MoneyType { get; set; }
             public string Item { get; set; }
-            public double MoneyIn { get; set; }
-            public double MoneyOut { get; set; }
+            public string Amount { get; set; }
+            public double DepositWithdrawal { get; set; }
+
         }
         public AccountsI()
         {
             InitializeComponent();
-            DataGridTextColumn col1 = new DataGridTextColumn();
+
+            var xml = XDocument.Load("C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml").Root;
+            datagridAccount.DataContext = xml;
+            
+
+            
+            
+            /*DataGridTextColumn col1 = new DataGridTextColumn();
             DataGridTextColumn col2 = new DataGridTextColumn();
             DataGridTextColumn col3 = new DataGridTextColumn();
             DataGridTextColumn col4 = new DataGridTextColumn();
-            DataGridTextColumn col5 = new DataGridTextColumn();
+
 
             datagridAccount.Columns.Add(col1);
             datagridAccount.Columns.Add(col2);
             datagridAccount.Columns.Add(col3);
             datagridAccount.Columns.Add(col4);
-            datagridAccount.Columns.Add(col5);
+
 
             col1.Binding = new Binding("Date");
-            col2.Binding = new Binding("MoneyType");
-            col3.Binding = new Binding("Item");
-            col4.Binding = new Binding("MoneyIn");
-            col5.Binding = new Binding("MoneyOut");
+            col2.Binding = new Binding("Item");
+            col3.Binding = new Binding("Amount");
+            col4.Binding = new Binding("DepsoitWithdrawal");
 
             col1.Header = "Date";
-            col2.Header = "Money Type";
-            col3.Header = "Item";
-            col4.Header = "Money In";
-            col5.Header = "Money Out";
+            col2.Header = "Item";
+            col3.Header = "Amount";
+            col4.Header = "Depsoit/Withdrawal";
 
-            datagridAccount.Items.Add(new MyAccountData { Date = "9/1/2015", MoneyType = "Income", Item = "Salary", MoneyIn = 5000.00, MoneyOut = 0.00 });
-            datagridAccount.Items.Add(new MyAccountData { Date = "9/2/2015", MoneyType = "Expense", Item = "Movie", MoneyIn = 0.00, MoneyOut = 40.00 });
-            datagridAccount.Items.Add(new MyAccountData { Date = "9/2/2015", MoneyType = "Expense", Item = "Restaurant", MoneyIn = 0.00, MoneyOut = 60.00 });
+            datagridAccount.Items.Add(new MyAccountData { Date = "9/1/2015", Item = "Salary", Amount = 5000.00, DepositWithdrawal = Deposit });
+            datagridAccount.Items.Add(new MyAccountData { Date = "9/2/2015", Item = "Movie", Amount = 40.00, DepositWithdrawal = Withdrawal});
+            datagridAccount.Items.Add(new MyAccountData { Date = "9/2/2015", Item = "Restaurant", Amount = 60.00, DepositWithdrawal = Withdrawal});*/
         }
-
         private void btnAccountAccount_Click(object sender, RoutedEventArgs e)
         {
 
@@ -76,13 +84,25 @@ namespace BudgetApplication
         }
         private void btnPostTransaction_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
+            try
+            {
+                TransactionInformation info = new TransactionInformation();
+                info.Date = dateSelection.Text;
+                info.Item = txtItem.Text;
+                info.Amount = txtAmount.Text;
+                info.DepositWithdrawal = depositwithdrawal.Text;
+                SaveXLM.SaveData(info, "C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
+            }   
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
+        }
+        //C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml
         private void btnAddAccount_Click_1(object sender, RoutedEventArgs e)
         {
-            AccountType addAccountType = new AccountType();
-            addAccountType.Show();
+            
         }
 
         private void datagridAccount_SelectionChanged(object sender, SelectionChangedEventArgs e)

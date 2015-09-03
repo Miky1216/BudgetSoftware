@@ -64,10 +64,12 @@
     <Compile Include="Credit.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="IBudget.cs" />
+    <Compile Include="TransactionInformation.cs" />
     <Compile Include="Reports.cs" />
     <Compile Include="ReportsInterface.xaml.cs">
       <DependentUpon>ReportsInterface.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SaveXLM.cs" />
     <Compile Include="Savings.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
@@ -147,6 +149,9 @@
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
     <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Transactions.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
