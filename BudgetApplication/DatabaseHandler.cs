@@ -29,6 +29,7 @@ namespace BudgetApplication
         void connectToDatabase()
         {
             m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
+            m_dbConnection = new SQLiteConnection("Data Source=budgetdatabase.sqlite;Version=3;");
             m_dbConnection.Open();
         }
         public void createTable(string nameoftable,string tablecolumns)
