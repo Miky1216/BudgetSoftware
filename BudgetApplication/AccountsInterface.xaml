@@ -17,6 +17,11 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Grid.Resources>
+            <XmlDataProvider x:Key="XMLData" XPath="TransactionInformation" Source="C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml">
+            </XmlDataProvider>
+        </Grid.Resources>
+
         <Button x:Name="btnAccountAccount" HorizontalAlignment="Left" Margin="33,78,0,0" VerticalAlignment="Top" Width="75" Click="btnAccountAccount_Click">
             <Hyperlink NavigateUri="AccountsInterface.xaml">Accounts</Hyperlink>
         </Button>
@@ -33,20 +38,30 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" TextAlignment ="Center" Text="Accounts" VerticalAlignment="Top" Height="37" Width="132" FontSize="22" FontWeight="Bold"/>
 
         <Viewbox Margin="56,-27,157,177" Grid.Column="2">
-            <DataGrid Grid.Column="1" x:Name="datagridAccount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="498" SelectionChanged="datagridAccount_SelectionChanged" />
+            <DataGrid Grid.Column="1" x:Name="datagridAccount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,64,0,0" Height="348" Width="Auto" SelectionChanged="datagridAccount_SelectionChanged"
+                ItemsSource="{Binding Path=Elements[Transactions]}" AutoGenerateColumns="False">
+                
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Path=Element[Date].Value}"/>
+                    <DataGridTextColumn Header="Item" Binding="{Binding Path=Element[Item].Value}"/>
+                    <DataGridTextColumn Header="Amount" Binding="{Binding Path=Element[Amount].Value}"/>
+                    <DataGridTextColumn Header="Deposit/Withdrawal" Binding="{Binding Path=Element[DepositWithdrawal].Value}"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </Viewbox>
 
 
         <TextBlock Grid.Column="1" x:Name="txtblockDate" HorizontalAlignment="Left" Margin="10,78,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top"/>
         <DatePicker Grid.Column="1" x:Name="dateSelection" HorizontalAlignment="Left" Margin="85,74,0,0" VerticalAlignment="Top"/>
-        <TextBlock Grid.Column="1" x:Name="txtblockMoneyType" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Money Type" VerticalAlignment="Top" RenderTransformOrigin="0.48,-1.125"/>
-        <TextBox Grid.Column="1" x:Name="txtMoneyType" HorizontalAlignment="Left" Height="23" Margin="85,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
-        <TextBlock Grid.Column="1" x:Name="txtblockItem" HorizontalAlignment="Left" Margin="10,168,0,0" TextWrapping="Wrap" Text="Item" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="1" x:Name="txtItem" HorizontalAlignment="Left" Height="23" Margin="85,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
-        <TextBlock Grid.Column="1" x:Name="txtblockMoneyIn" HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" Text="Money In" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="1" x:Name="txtMoneyIn" HorizontalAlignment="Left" Height="23" Margin="85,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
-        <TextBlock Grid.Column="1" x:Name="txtblockMoneyOut" HorizontalAlignment="Left" Margin="10,256,0,0" TextWrapping="Wrap" Text="Money Out" VerticalAlignment="Top" RenderTransformOrigin="0.56,-0.5"/>
-        <TextBox Grid.Column="1" x:Name="txtMoneyOut" HorizontalAlignment="Left" Height="23" Margin="85,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockItem" HorizontalAlignment="Left" Margin="11,120,0,0" TextWrapping="Wrap" Text="Item" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" x:Name="txtItem" HorizontalAlignment="Left" Height="23" Margin="85,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockAmount" HorizontalAlignment="Left" Margin="11,169,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" x:Name="txtAmount" HorizontalAlignment="Left" Height="23" Margin="85,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
+        <TextBlock Grid.Column="1" x:Name="txtblockDepositWithdrawal" HorizontalAlignment="Left" Margin="35,222,0,0" TextWrapping="Wrap" Text="Deposit/Withdrawal" VerticalAlignment="Top" RenderTransformOrigin="0.56,-0.5"/>
+        <ComboBox x:Name="depositwithdrawal" Grid.Column="1" HorizontalAlignment="Left" Margin="35,254,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Deposit</ComboBoxItem>
+            <ComboBoxItem>Withdrawal</ComboBoxItem>
+        </ComboBox>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="20,30,0,0" TextWrapping="Wrap" Text="Add New Transaction" VerticalAlignment="Top" FontSize="18"/>
 
 
