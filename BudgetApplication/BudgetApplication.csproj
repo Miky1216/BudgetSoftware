@@ -73,9 +73,6 @@
     <Compile Include="Savings.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
-    <Compile Include="Transaction.xaml.cs">
-      <DependentUpon>Transaction.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserInterface.cs" />
     <Page Include="AccountsInterface.xaml">
       <SubType>Designer</SubType>
@@ -109,10 +106,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ReportsInterface.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Transaction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

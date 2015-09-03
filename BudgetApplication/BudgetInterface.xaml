@@ -17,6 +17,11 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Grid.Resources>
+            <XmlDataProvider x:Key="XMLData" XPath="TransactionInformation" Source="Transactions.xml">
+            </XmlDataProvider>
+        </Grid.Resources>
+
         <Button x:Name="btnAccountBudget" HorizontalAlignment="Left" Margin="33,78,0,0" VerticalAlignment="Top" Width="75" Click="btnAccountBudget_Click" Height="22">
             <Hyperlink NavigateUri="AccountsInterface.xaml">Accounts</Hyperlink>
         </Button>
@@ -29,41 +34,31 @@
         <Button x:Name="btnHome1" HorizontalAlignment="Left" Margin="33,202,0,0" VerticalAlignment="Top" Width="75">
             <Hyperlink NavigateUri="MainWindow.xaml">Home</Hyperlink>
         </Button>
-
-        <Button x:Name="btnAddCategory" Content="Add Category" HorizontalAlignment="Left" Margin="58,246,0,0" VerticalAlignment="Top" Width="94" Click="btnAddCategory_Click" Grid.Column="1"/>
-        <Button x:Name="btnAddItem" Content="Add Item" Margin="58,454,92,0" VerticalAlignment="Top" Click="btnAddItem_Click" Grid.Column="1"/>
+        <Button x:Name="btnAddItem" Content="Add Item" Margin="68,261,82,0" VerticalAlignment="Top" Click="btnAddItem_Click" Grid.Column="1" RenderTransformOrigin="0.76,-0.364"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" TextAlignment ="Center" Text="Budget" VerticalAlignment="Top" Height="37" Width="132" FontSize="22" FontWeight="Bold"/>
 
         <Viewbox Margin="56,-27,157,177" Grid.Column="2">
             <DataGrid Grid.Column="2" x:Name="datagridBudget" HorizontalAlignment="Left" VerticalAlignment="Top" 
-             Margin="37,64,0,0" Height="348" Width="Auto" SelectionChanged="datagridBudget_SelectionChanged" >
+             Margin="37,64,0,0" Height="348" Width="Auto" SelectionChanged="datagridBudget_SelectionChanged" 
+             ItemsSource="{Binding Path=Elements[BudgetOutlook].}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Item"           />
-                    <DataGridTextColumn Header="Budgeted Cost"  />
-                    <DataGridTextColumn Header="Actual Cost"    />
-                    <DataGridTextColumn Header="Difference Budget/Actual"     />
+                    <DataGridTextColumn Header="Item" Binding="{Binding Path=Element[ItemBudgeted].Value}"/>
+                    <DataGridTextColumn Header="Budgeted Cost" Binding="{Binding Path=Element[BudgetedCost].Value}"/>
+                    <DataGridTextColumn Header="Actual Cost" Binding="{Binding Path=Element[ActualCost].Value}"/>
+                    <DataGridTextColumn Header="Difference Budget/Actual" Binding="{Binding Path=Element[Difference].Value}"/>
                 </DataGrid.Columns>
             </DataGrid> 
         </Viewbox>
-
-        <TextBlock x:Name="txtblockCategory" Grid.Column="1" HorizontalAlignment="Left" Margin="27,78,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCategories" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
+        
+        <TextBlock x:Name="txtblockItemB" Grid.Column="1" HorizontalAlignment="Left" Margin="27,78,0,0" TextWrapping="Wrap" Text="Item" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtItemB" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
         <TextBlock x:Name="txtblockBudgeted" Grid.Column="1" HorizontalAlignment="Left" Margin="27,121,0,0" TextWrapping="Wrap" Text="Budgeted" VerticalAlignment="Top"/>
         <TextBox x:Name="txtBudgeted" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
         <TextBlock x:Name="txtblockActualCost" Grid.Column="1" HorizontalAlignment="Left" Margin="27,167,0,0" TextWrapping="Wrap" Text="Actual Cost" VerticalAlignment="Top"/>
         <TextBox x:Name="txtAcutalCost" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
-        <TextBlock x:Name="txtblockDifference" Grid.Column="1" HorizontalAlignment="Left" Margin="27,208,0,0" TextWrapping="Wrap" Text="Difference" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtblockDifferenc" Grid.Column="1" HorizontalAlignment="Left" Margin="27,208,0,0" TextWrapping="Wrap" Text="Difference" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDifference" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
-
-        <TextBlock x:Name="txtblockItem" Grid.Column="1" HorizontalAlignment="Left" Margin="22,292,0,0" TextWrapping="Wrap" Text="Item" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtItem" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="100,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
-        <TextBlock x:Name="txtblockBudgeted1" Grid.Column="1" HorizontalAlignment="Left" Margin="22,335,0,0" TextWrapping="Wrap" Text="Budgeted" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtBudgeted1" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="100,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
-        <TextBlock x:Name="txtblockActualCost1" Grid.Column="1" HorizontalAlignment="Left" Margin="22,381,0,0" TextWrapping="Wrap" Text="Actual Cost" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAcutalCost1" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="100,378,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
-        <TextBlock x:Name="txtblockDifferenc1" Grid.Column="1" HorizontalAlignment="Left" Margin="22,422,0,0" TextWrapping="Wrap" Text="Difference" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDifference1" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="100,422,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Page>

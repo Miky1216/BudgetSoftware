@@ -85,19 +85,6 @@ namespace BudgetApplication
         
         private void btnPostTransaction_Click(object sender, RoutedEventArgs e)
         {
-            /*try
-            {
-                TransactionInformation info = new TransactionInformation();
-                info.Date = dateSelection.Text;
-                info.Item = txtItem.Text;
-                info.Amount = txtAmount.Text;
-                info.DepositWithdrawal = depositwithdrawal.Text;
-                SaveXLM.SaveData(info, "C:/Users/Mterrill_Li/Dropbox/C#/Week 7/BudgetApplication/BudgetApplicationRepo/BudgetApplication/Transactions.xml");
-            }   
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }*/
             try
             {
             XmlDocument doc = new XmlDocument();
